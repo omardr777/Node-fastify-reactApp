@@ -52,7 +52,7 @@ const updateGoal = async (goalData, token) => {
         }
     }
     // const response = await axios.post(API_URL, goalData, config);
-    const response = await axios.put('/api/goals', goalData, config);
+    const response = await axios.put(API_URL, goalData, config);
     return response.data;
 
 }
